@@ -1,0 +1,6 @@
+digraph stack {
+rankdir=LR;
+node [shape=record, style=filled, fillcolor=yellow];
+"node0" [
+ label = "|<f0> 16|<f1> 52|<f2> 96|<f3> 29|<f4> 75|<f5> 93|<f6> 84|<f7> 68|<f8> 79|<f9> 14", shape = "record", fillcolor = "yellow"];
+}

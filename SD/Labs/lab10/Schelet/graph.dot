@@ -1,0 +1,9 @@
+digraph G {
+    node [fontname="Arial", shape=circle, style=filled, fillcolor=yellow];
+    1 -> 2;
+    1 -> 4;
+    2 -> 3;
+    3 -> 5;
+    4 -> 3;
+    4 -> 5;
+}

@@ -1,0 +1,25 @@
+digraph foo {
+rankdir=LR;
+node [shape=record, style=filled, fillcolor=yellow];
+a0 [label="{ <data> 9 | <ref>  }", width=0.9];
+a1 [label="{ <data> 8 | <ref>  }", width=0.9];
+a2 [label="{ <data> 7 | <ref>  }", width=0.9];
+a3 [label="{ <data> 6 | <ref>  }", width=0.9];
+a4 [label="{ <data> 5 | <ref>  }", width=0.9];
+a5 [label="{ <data> 4 | <ref>  }", width=0.9];
+a6 [label="{ <data> 3 | <ref>  }", width=0.9];
+a7 [label="{ <data> 2 | <ref>  }", width=0.9];
+a8 [label="{ <data> 1 | <ref>  }", width=0.9];
+a9 [label="{ <data> 0 | <ref>  }", width=0.9];
+a10 [label="{ <data> 10 | <ref>  }", width=0.9, fillcolor=blue];
+a11 [label="{ <data> 11 | <ref>  }", width=0.9];
+a12 [label="{ <data> 12 | <ref>  }", width=0.9];
+a13 [label="{ <data> 13 | <ref>  }", width=0.9];
+a14 [label="{ <data> 14 | <ref>  }", width=0.9];
+a15 [label="{ <data> 15 | <ref>  }", width=0.9];
+a16 [label="{ <data> 16 | <ref>  }", width=0.9];
+a17 [label="{ <data> 17 | <ref>  }", width=0.9];
+a18 [label="{ <data> 18 | <ref>  }", width=0.9];
+a19 [label="{ <data> 19 | <ref>  }", width=0.9];
+b [label="NULL", shape=box, fillcolor=red];
+a0:ref:c -> a1:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a1:ref:c -> a2:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a2:ref:c -> a3:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a3:ref:c -> a4:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a4:ref:c -> a5:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a5:ref:c -> a6:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a6:ref:c -> a7:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a7:ref:c -> a8:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a8:ref:c -> a9:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a9:ref:c -> a10:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a10:ref:c -> a11:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a11:ref:c -> a12:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a12:ref:c -> a13:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a13:ref:c -> a14:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a14:ref:c -> a15:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a15:ref:c -> a16:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a16:ref:c -> a17:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a17:ref:c -> a18:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a18:ref:c -> a19:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, arrowsize=0.9];a19:ref:c -> b      [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];}

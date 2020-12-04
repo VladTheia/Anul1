@@ -1,0 +1,21 @@
+Vlad Theia Madalin 
+Grupa 314CC
+
+Pentru realizarea temei au fost folosite 3 structuri de date. Structura
+"QuadtreeNode" este cea obligatorie si necesara pentru vectorul utilizat
+la compresie. Structura "quadTree" este cea de care ne vom folosi pentru
+crearea arborilor in care vom stoca datele utile. Structura "Pixel" ne 
+usureaza treaba, in ea aflandu-se valorile pentru red, green si blue.
+Compresia este formata din: citirea datelor din fisierul PPM primit ca 
+input, crearea arborelui, indexarea acestuia, crearea vectorului de 
+compresie si scrierea in fisier in format binar. Arborele se obtine cu 
+ajutorul unei functii recursive, ce verifica daca un nod este frunza sau 
+nu(acest lucru fiind determinat de relatia dintre mean si pragul dat).
+Functia de decompresie este exact inversul celei de compresie. Vom citi
+vectorul de compresie, il vom transpune intr-un vector de pixeli din 
+care va rezulta un arbore, pe baza caruia vom realiza matricea de pixeli 
+pe care o vom folosi la scrierea in fiserul PPM. Functie de oglindire 
+imbina citirea si crearea arborelui (in afara de regula schimbata pentru 
+tipul de oglindire) de la compresie si scrierea de la decompresie. Pentru 
+realizarea bonusului avem nevoie de o functie ce face media intre elementele
+a doi arbori.

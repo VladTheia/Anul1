@@ -1,0 +1,12 @@
+Tema 1 Programarea Calculatoarelor
+Vlad Theia Madain
+Grupa 314CC
+
+Functia int citire(char ***sir_principal, int **tip, int *n) este folosita pentru citirea elementelor si returnarea numarului de elemente. In interiorul ei am implementat algoritmi pentru determinarea tipului fiecarui element citit, acesta putand sa fie cuvant, numar sau caracter, Am aflat numarul de elemente folosind un numarator i, care creste inaintea de citirea fiecarui element citit. Din moment ce ultimul elemente este sirul "END", am returnat i-1 pentru a-l scoate din considerare. Apoi am folosit un numarator k pentru a afla cate elemente de fiecare tip sunt si pentru a afisa numarul acestora.
+Functiile 
+void codificare_cuvant(char *cuvant, char *sir_codificat); 
+void codificare_caracter(char caracter, char *sir_codificat);
+void codificare_numar(char *numar, char *sir_codificat);
+sunt folosite pentru codificarea fiecarui tip de termen asa cum este dat in cerinta. In codificare_cuvant am aflat daca string-ul contine cifre, codificarea lui fiind diferita in functie de acest factor. In codificare_caracter am aflat caracterele cel mai mult/putin intalnite si le am pus inainte si dupa caracter, apoi am inserat acest string la string-ul codificat pana in acel moment. In codificare_numar am aflat daca numarul este pozitiv sau negativ. Daca este negativ l-am pus in modul si am obtinut numarul minim realizabil prin rotatia cifrelor, iar daca este pozitiv am obtinut numarul maxim realizabil prin rotatia cifrelor.
+In functia int construire_sir(char **sir_codificat) am folosit toate functiile anterioare, am trecut prin tot sirul necodificat, iar in functie de tipul fiecarui element, l-am codificat si l-am inserat intr-un nou sir (sirul codificat). De asemenea, functia returneaza n pentru putea imparti sirul in n blocuri.
+In functia void sortare_sir() am folosit vectorul de structuri s(structuri cu componentele subsir, reprezentat de fiecare bloc si complexitate, reprezentat de media aritmetica a codurilor ASCII a fiecarui caracter din subsir). Dupa copierea fiecarui bloc din sirul codificat in fiecare subsir, am aflat complexitatile si am sortat vectorul de structuri descrescator dupa complexitate. In final, am afisat noul sir (sirul sortat) asa cum este specificat in cerinta (0, n-1, 1, n-2, 2 etc.)

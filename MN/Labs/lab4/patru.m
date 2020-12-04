@@ -1,0 +1,14 @@
+A = [1.5 -2.1; -7.6 3.11];
+b = [8.3; 6.7];
+[M, v] = GPP(A, b);
+x = SST(M,v);
+printf('%0.2f\n', x);
+printf('\n');
+[M, v] = GPPS(A, b);
+x = SST(M, v);
+printf('%0.2f\n', x);
+printf('\n');
+[M, v] = GPT(A, b);
+x = SST(M, v);
+printf('%0.2f\n', x);
+printf('\n');

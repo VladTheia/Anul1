@@ -1,0 +1,13 @@
+digraph BST {
+    node [fontname="Arial", shape=circle, style=filled, fillcolor=red];
+    7 -> 9;
+    9 -> 6;
+    9 -> 10;
+    10 -> 8;
+    7 -> 5;
+    5 -> -8;
+    5 -> 4;
+    4 -> 12;
+    6 [fontname="Arial", shape=circle, style=filled, fillcolor=yellow];
+    12 [fontname="Arial", shape=circle, style=filled, fillcolor=green];
+}
